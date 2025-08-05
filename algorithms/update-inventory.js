@@ -1,3 +1,16 @@
+/**
+ * Compare and update the inventory stored in a 2D array against a second 2D array
+ * of a fresh delivery. Update the current existing inventory item quantities (in arr1).
+ * If an item cannot be found, add the new item and quantity into the inventory array.
+ * The returned inventory array should be in alphabetical order by item.
+ * 
+ * input example: [
+ * [21, "Bowling Ball"],
+ * [2, "Dirty Sock"],
+ * [1, "Hair Pin"],
+ * [5, "Microphone"]
+ * ]
+ */
 function updateInventory(currentInventory, newInventory) {
   const currentInventoryObject = mapArrayToObject(currentInventory);
   newInventory.forEach(pair => {
